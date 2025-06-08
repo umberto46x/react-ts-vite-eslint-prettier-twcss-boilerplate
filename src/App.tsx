@@ -1,6 +1,10 @@
 import { Card } from './pages/level1/Card';
 import { Level1Layout } from './pages/level1/Level1Layout';
 import { QuoteCard } from './pages/level1/QuoteCard';
+import { Counter } from './pages/level2/Counter';
+import { Feedback } from './pages/level2/Feedback';
+import { Level2Layout } from './pages/level2/Level2Layout';
+import { Toggler } from './pages/level2/Toggler';
 
 function App() {
   return (
@@ -26,6 +30,11 @@ function App() {
             imgUrl="https://th.bing.com/th/id/OIP.5onaA1bEd8qeq85gkQk-wAAAAA?rs=1&pid=ImgDetMain"
           ></QuoteCard>
         </Level1Layout>
+        <Level2Layout>
+          <Toggler></Toggler>
+          <Counter></Counter>
+          <Feedback></Feedback>
+        </Level2Layout>
       </div>
     </>
   );
