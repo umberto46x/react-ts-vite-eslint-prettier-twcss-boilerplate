@@ -5,6 +5,10 @@ import { Counter } from './pages/level2/Counter';
 import { Feedback } from './pages/level2/Feedback';
 import { Level2Layout } from './pages/level2/Level2Layout';
 import { Toggler } from './pages/level2/Toggler';
+import { ExtendedToDoList } from './pages/level3/ExtendedToDoList';
+import { Level3Layout } from './pages/level3/Level3Layout';
+import { ToDoList } from './pages/level3/ToDoList';
+import { Level4Layout } from './pages/level4/Level4Layout';
 
 function App() {
   return (
@@ -35,6 +39,11 @@ function App() {
           <Counter></Counter>
           <Feedback></Feedback>
         </Level2Layout>
+        <Level3Layout>
+          <ToDoList></ToDoList>
+          <ExtendedToDoList></ExtendedToDoList>
+        </Level3Layout>
+        <Level4Layout></Level4Layout>
       </div>
     </>
   );
