@@ -1,15 +1,15 @@
 import { Card } from './pages/level1/Card';
-import { Level1Layout } from './pages/level1/Level1Layout';
+import { Level1Layout } from './layouts/Level1Layout';
 import { QuoteCard } from './pages/level1/QuoteCard';
 import { Counter } from './pages/level2/Counter';
 import { Feedback } from './pages/level2/Feedback';
-import { Level2Layout } from './pages/level2/Level2Layout';
+import { Level2Layout } from './layouts/Level2Layout';
 import { Toggler } from './pages/level2/Toggler';
 import { ExtendedToDoList } from './pages/level3/ExtendedToDoList';
-import { Level3Layout } from './pages/level3/Level3Layout';
+import { Level3Layout } from './layouts/Level3Layout';
 import { ToDoList } from './pages/level3/ToDoList';
 import { GithubUser } from './pages/level4/GithubUser';
-import { Level4Layout } from './pages/level4/Level4Layout';
+import { Level4Layout } from './layouts/Level4Layout';
 import { LiveClock } from './pages/level4/LiveClock';
 
 function App() {
