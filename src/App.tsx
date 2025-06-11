@@ -8,7 +8,9 @@ import { Toggler } from './pages/level2/Toggler';
 import { ExtendedToDoList } from './pages/level3/ExtendedToDoList';
 import { Level3Layout } from './pages/level3/Level3Layout';
 import { ToDoList } from './pages/level3/ToDoList';
+import { GithubUser } from './pages/level4/GithubUser';
 import { Level4Layout } from './pages/level4/Level4Layout';
+import { LiveClock } from './pages/level4/LiveClock';
 
 function App() {
   return (
@@ -43,7 +45,10 @@ function App() {
           <ToDoList></ToDoList>
           <ExtendedToDoList></ExtendedToDoList>
         </Level3Layout>
-        <Level4Layout></Level4Layout>
+        <Level4Layout>
+          <GithubUser username="umberto46x"></GithubUser>
+          <LiveClock></LiveClock>
+        </Level4Layout>
       </div>
     </>
   );
