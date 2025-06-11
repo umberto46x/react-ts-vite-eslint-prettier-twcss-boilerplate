@@ -12,7 +12,7 @@ export const LevelLayout = ({
         Level {level}{' '}
       </h2>
       <h4 className="text-center mb-5 bg-gray-500 text-4xl p-5">{title}</h4>
-      {children}
+      <div className="flex">{children}</div>
     </div>
   );
 };

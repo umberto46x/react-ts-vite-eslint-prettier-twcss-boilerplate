@@ -1,0 +1,27 @@
+import { LevelLayout } from '../../layouts/LevelLayout';
+import { Card } from './Card';
+import { QuoteCard } from './QuoteCard';
+
+export const Level1 = () => {
+  return (
+    <>
+      <LevelLayout level={1} title="JSX/TSX , Components, Props">
+        <Card
+          title="Card"
+          imgUrl="https://picsum.photos/200"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima et reiciendis fugiat repellendus, explicabo sunt pariatur veritatis recusandae ullam? Rem delectus corporis quod praesentium beatae cupiditate quae inventore quam quisquam."
+        ></Card>
+        <QuoteCard
+          author="George Orwell"
+          text="Scrittore e giornalista britannico, noto per le sue opere di critica sociale e politica. Il suo stile è chiaro, diretto e impegnato. I suoi romanzi più celebri, 1984 e La fattoria degli animali, sono allegorie potenti contro il totalitarismo e la manipolazione della verità. Orwell è diventato un punto di riferimento per il pensiero critico sulla società moderna."
+          imgUrl="https://th.bing.com/th/id/OIP.CCp8Du_ffUDrNS5MmlWRJwHaJ5?rs=1&pid=ImgDetMain"
+        ></QuoteCard>
+        <QuoteCard
+          author="Elena Ferrante"
+          text="Autrice italiana di grande fama internazionale, conosciuta per la serie de L’amica geniale, che racconta l’evoluzione dell’amicizia tra due donne sullo sfondo di una Napoli complessa e in trasformazione. Ferrante è apprezzata per il suo stile intenso e per la profondità psicologica dei personaggi. La sua scelta di restare anonima ha aumentato il fascino intorno alla sua figura."
+          imgUrl="https://th.bing.com/th/id/OIP.5onaA1bEd8qeq85gkQk-wAAAAA?rs=1&pid=ImgDetMain"
+        ></QuoteCard>
+      </LevelLayout>
+    </>
+  );
+};
