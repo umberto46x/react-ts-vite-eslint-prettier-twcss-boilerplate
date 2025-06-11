@@ -1,16 +1,17 @@
 import { Card } from './pages/level1/Card';
-import { Level1Layout } from './layouts/Level1Layout';
+
 import { QuoteCard } from './pages/level1/QuoteCard';
 import { Counter } from './pages/level2/Counter';
 import { Feedback } from './pages/level2/Feedback';
-import { Level2Layout } from './layouts/Level2Layout';
+
 import { Toggler } from './pages/level2/Toggler';
 import { ExtendedToDoList } from './pages/level3/ExtendedToDoList';
-import { Level3Layout } from './layouts/Level3Layout';
+
 import { ToDoList } from './pages/level3/ToDoList';
 import { GithubUser } from './pages/level4/GithubUser';
-import { Level4Layout } from './layouts/Level4Layout';
+
 import { LiveClock } from './pages/level4/LiveClock';
+import { LevelLayout } from './layouts/LevelLayout';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <h1 className="text-5xl text-bold text-gray-700">
           React Beginner to Master
         </h1>
-        <Level1Layout>
+        <LevelLayout level={1} title="JSX/TSX , Components, Props">
           <Card
             title="Card"
             imgUrl="https://picsum.photos/200"
@@ -35,20 +36,31 @@ function App() {
             text="Autrice italiana di grande fama internazionale, conosciuta per la serie de L’amica geniale, che racconta l’evoluzione dell’amicizia tra due donne sullo sfondo di una Napoli complessa e in trasformazione. Ferrante è apprezzata per il suo stile intenso e per la profondità psicologica dei personaggi. La sua scelta di restare anonima ha aumentato il fascino intorno alla sua figura."
             imgUrl="https://th.bing.com/th/id/OIP.5onaA1bEd8qeq85gkQk-wAAAAA?rs=1&pid=ImgDetMain"
           ></QuoteCard>
-        </Level1Layout>
-        <Level2Layout>
+        </LevelLayout>
+
+        <LevelLayout
+          level={2}
+          title="UseState,EventHandling,Conditional rendering, State-Controlled form
+        values"
+        >
           <Toggler></Toggler>
           <Counter></Counter>
           <Feedback></Feedback>
-        </Level2Layout>
-        <Level3Layout>
+        </LevelLayout>
+
+        <LevelLayout level={3} title="Lists, Keys, Forms">
           <ToDoList></ToDoList>
           <ExtendedToDoList></ExtendedToDoList>
-        </Level3Layout>
-        <Level4Layout>
+        </LevelLayout>
+
+        <LevelLayout level={4} title="Effects, Lifecycles">
           <GithubUser username="umberto46x"></GithubUser>
           <LiveClock></LiveClock>
-        </Level4Layout>
+        </LevelLayout>
+        <LevelLayout
+          level={5}
+          title="Component Architecture & Lifting State"
+        ></LevelLayout>
       </div>
     </>
   );

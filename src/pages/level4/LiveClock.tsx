@@ -6,12 +6,12 @@ export const LiveClock = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(new Date().toLocaleTimeString());
-    }, 750);
+    }, 1000);
 
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [time]);
   return (
     <>
       <div className="w-75 mx-auto bg-gray-500 m-4 text-center pb-10    ">
