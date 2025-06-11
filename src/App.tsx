@@ -13,6 +13,7 @@ import { GithubUser } from './pages/level4/GithubUser';
 import { LiveClock } from './pages/level4/LiveClock';
 import { LevelLayout } from './layouts/LevelLayout';
 
+
 function App() {
   return (
     <>
@@ -60,7 +61,9 @@ function App() {
         <LevelLayout
           level={5}
           title="Component Architecture & Lifting State"
-        ></LevelLayout>
+        >
+        
+        </LevelLayout>
       </div>
     </>
   );

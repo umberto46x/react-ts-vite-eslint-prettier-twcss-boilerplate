@@ -19,7 +19,7 @@ export const GithubUserCard = ({
     <>
       <div className=" mx-auto">
         <img
-          className="size-32 rounded-xl border-4 border-gray-300 mb-4 mx-auto"
+          className="size-32 rounded-xl border-4 border-gray-300 mb-4 mx-auto  hover:animate-pulse"
           src={avatar_url}
           alt={name}
         />
